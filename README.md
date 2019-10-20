@@ -9,4 +9,4 @@ To execute make command to generate \*.png:
 
 ## Screen
 
-[python-map](./python-map.png)
+![python-map](./python-map.png)
