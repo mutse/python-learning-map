@@ -1,0 +1,22 @@
+//
+// This is a python learning map
+// Author: Mutse Young <yyhoo2.young@gmail.com>
+// Date: Oct 20th, 2019
+//
+digraph G {
+    rankdir=LR;
+    node [fontname="SimSun" shape=ellipse]
+    label="Python 知识图谱 by Mutse" 
+    "知识图谱" -> {"基础篇", "进阶篇", "核心特征", "魔法方法"};
+    "知识图谱"[shape=box, fontcolor=red]
+    "基础篇"[fontcolor=blue]
+    "进阶篇"[fontcolor=blue]
+    "核心特征"[fontcolor=blue]
+    "魔法方法"[fontcolor=blue]
+    "基础篇" -> {"数据结构", "控制语句", "函数", "面向对象", "异常处理", "文件操作"};
+    "数据结构" -> {"列表", "元组", "字典", "集合", "字符串"}
+    "进阶篇" -> {"并发", "网络编程", "数据库", "表达式推导", "进阶库"};
+    "进阶库" -> {"numpy", "pandas", "scipy", "matplotlib", "tensorflow", "scikit-learn", "django"}
+    "核心特征" -> {"内存管理", "生成器", "装饰器", "迭代器", "闭包", "函数式编程", "正则表达式"}
+    "函数式编程" -> {"map", "filter", "reduce"};
+}
